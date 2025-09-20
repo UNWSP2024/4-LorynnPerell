@@ -6,7 +6,15 @@
 
 def main():
     ######################
-    # WRITE YOUR CODE HERE
+    num_movies = int(input("How many movies do you want to enter? "))
+    total_tickets = 0
+
+    for i in range (num_movies):
+        movie=input(f"Enter the name of movie #{i+1}: ")
+        tickets = int(input(f"How many tickets for {movie}? "))
+        total_tickets += tickets
+
+    print(f"\nTotal tickets desired: {total_tickets}")
     ######################
 
 
